@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a ebook api project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon server.ts",
     "lint": "eslint .",
@@ -12,11 +13,15 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
     "@types/node": "^26.5.1",
     "eslint": "^10.10.0",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.70.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
