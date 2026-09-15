@@ -4,7 +4,7 @@
   "description": "This is a ebook api project",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "dev": "nodemon server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
