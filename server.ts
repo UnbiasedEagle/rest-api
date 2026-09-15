@@ -1,10 +1,10 @@
-import express from "express";
-const app = express();
+import app from "./src/app.js";
 
-app.get("/healthcheck", (req, res) => {
-  res.status(200).send("OK");
-});
+const startServer = () => {
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+};
 
-app.listen(3000, () => {
-  console.log("Server is running");
-});
+startServer();
